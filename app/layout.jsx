@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen flex flex-col items-center">
         <div className="w-full max-w-[1000px]">
           <Header />
-          {children}
+          <div className="flex justify-center">{children}</div>
         </div>
       </body>
     </html>

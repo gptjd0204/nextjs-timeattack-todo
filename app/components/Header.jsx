@@ -8,6 +8,7 @@ const Header = () => {
         <h1 className="text-2xl font-bold">나만의 Todo 앱</h1>
       </Link>
       <div className="flex gap-5">
+        <Link href="/todos/new">Todo 생성</Link>
         <Link href="/todos">Todo 목록</Link>
       </div>
     </div>
