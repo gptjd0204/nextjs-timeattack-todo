@@ -46,7 +46,7 @@ const TodoForm = () => {
       createdAt: Date.now(),
     };
 
-    if (validTitle || validContent) {
+    if (validTitle === "" || validContent === "") {
       alert("할일을 생성할 수 없습니다!");
       return;
     }
