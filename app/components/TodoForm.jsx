@@ -9,8 +9,8 @@ const TodoForm = () => {
   const [content, setContent] = useState("");
   const [category, setCategory] = useState(1);
   const [priority, setPriority] = useState("high");
-  const [validTitle, setValidTitle] = useState("");
-  const [validContent, setValidContent] = useState("");
+  const [validTitle, setValidTitle] = useState("제목을 입력해주세요!");
+  const [validContent, setValidContent] = useState("설명을 입력해주세요!");
   const router = useRouter();
 
   const titleHandler = (e) => {
@@ -46,7 +46,7 @@ const TodoForm = () => {
       createdAt: Date.now(),
     };
 
-    if (validTitle === "" || validContent === "") {
+    if (validTitle !== "" || validContent !== "") {
       alert("할일을 생성할 수 없습니다!");
       return;
     }
